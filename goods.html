@@ -67,7 +67,7 @@
             </div>
             <div class="header__middle-init">
               <div class="exit">
-                <button>Войти</button>
+                <button class="login-link">Войти</button>
               </div>
               <div class="registrarion">
                 <button>Регистрация</button>
@@ -172,27 +172,30 @@
                 </div>
                 <div class="middle__block">
                   <input type="radio" name="middle__block" id="middle__block1" checked>
-                  <label for="middle__block1">По цене</label> 
+                  <label for="middle__block1" id="price">По цене</label> 
                   
                   <input type="radio" name="middle__block" id="middle__block2">
-                  <label for="middle__block2" class="middle__block2">По типу</label> 
+                  <label for="middle__block2" class="middle__block2" id="type">По типу</label> 
                   
                   <input type="radio" name="middle__block" id="middle__block3">
-                  <label for="middle__block3">По функционалу</label>             
+                  <label for="middle__block3" id="characteristic">По функционалу</label>             
                 </div>
                 <div class="right__block">
                   <input type="radio" name="right__block" id="right__block1">
-                  <label for="right__block1" ><i class="fas fa-caret-up"></i></label> 
+                  <label for="right__block1" ><i class="fas fa-caret-up" id="sort-up"></i></label> 
                   
                   <input type="radio" name="right__block" id="right__block2" checked>
-                  <label for="right__block2"><i class="fas fa-caret-down"></i></label> 
+                  <label for="right__block2"><i class="fas fa-caret-down" id="sort-down"></i></label> 
                 </div>
               </div>
               <div class="content__cards">
-                <div class="catalog-item">
+                <div class="catalog-item" data-price="15500" data-type="1" data-char="1">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/lightning.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_2.png" />
@@ -201,22 +204,28 @@
                   <div class="discount">22500 Р.</div>
                   <div class="price">15500 Р.</div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item" data-price="22500" data-type="1" data-char="2">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/lightning.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_3.png" />
                   </div>
-                  <div class="title">Перфоратор BOSCH BFG 6000</div>
+                  <div class="title">Дрель BOSCH BFG 6000</div>
                   <div class="discount">30500 Р.</div>
                   <div class="price">22500 Р.</div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item" data-price="12500" data-type="2" data-char="1">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/battery.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_2.png" />
@@ -225,34 +234,43 @@
                   <div class="discount"></div>
                   <div class="price">12500 Р.</div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item" data-price="17500" data-type="2" data-char="1">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/battery.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_2.png" />
                   </div>
                   <div class="title">Перфоратор BOSCH BFG 3000</div>
                   <div class="discount">22500 Р.</div>
-                  <div class="price">15500 Р.</div>
+                  <div class="price">17500 Р.</div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item" data-price="27500" data-type="1" data-char="1">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/lightning.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_3.png" />
                   </div>
                   <div class="title">Перфоратор BOSCH BFG 6000</div>
                   <div class="discount">30500 Р.</div>
-                  <div class="price">22500 Р.</div>
+                  <div class="price">27500 Р.</div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item"  data-price="12500" data-type="2" data-char="1">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/battery.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_2.png" />
@@ -261,34 +279,43 @@
                   <div class="discount"></div>
                   <div class="price">12500 Р.</div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item"  data-price="15500" data-type="2" data-char="2">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/battery.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_2.png" />
                   </div>
-                  <div class="title">Перфоратор BOSCH BFG 3000</div>
+                  <div class="title">Дрель BOSCH BFG 3000</div>
                   <div class="discount">22500 Р.</div>
                   <div class="price">15500 Р.</div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item"  data-price="10500" data-type="1" data-char="1">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/lightning.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_3.png" />
                   </div>
                   <div class="title">Перфоратор BOSCH BFG 6000</div>
                   <div class="discount">30500 Р.</div>
-                  <div class="price">22500 Р.</div>
+                  <div class="price">10500 Р.</div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item"  data-price="12500" data-type="1">
                   <div class="actions">
                     <a href="#" class="buy">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
+                  </div>
+                  <div class="image__type">
+                    <img src="img/lightning.png" alt="">
                   </div>
                   <div class="image">
                     <img src="img/Perforator_2.png" />
@@ -480,6 +507,20 @@
           </div>
         </div>
       </footer>
+      <section class="modal modal-login">
+        <div class="modal__header">
+          <img src="img/icon-user.png" alt="">
+          <div class="modal__title">Равшан Джамшутович</div>
+          <img class="login-form-img" src="img/icon-logout.png" alt="">
+
+        </div>
+ 
+        <div class="modal__links">
+          <a class="modal__link" href="">Мои заказы</a>
+          <span class="round"></span>
+          <a class="modal__link" href="">Личный кабинет</a>
+        </div>
+      </section>
     </main>
 
     <script src="js/jquery-3.2.1.min.js"></script>
